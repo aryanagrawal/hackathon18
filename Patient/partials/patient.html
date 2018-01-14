@@ -1,0 +1,36 @@
+<div class="fs-form-wrap" id="fs-form-wrap">
+    <div class="fs-title">
+        <h1>Patient Form</h1>
+        <div class="codrops-top">
+            <a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/NotificationStyles/"><span>Previous Demo</span></a>
+            <a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19520"><span>Back to the Codrops Article</span></a>
+            <a class="codrops-icon codrops-icon-info" href="#"><span>This is a demo for a fullscreen form</span></a>
+        </div>
+    </div>
+    <form id="myform" class="fs-form fs-form-full" autocomplete="off">
+        <ol class="fs-fields">
+            <li>
+                <label class="fs-field-label fs-anim-upper" for="q1">What's your name?</label>
+                <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Enter your name here" ng-model="ans.name" required/>
+            </li>
+            <li>
+                <label class="fs-field-label fs-anim-upper" for="q2">What's your age?</label>
+                <input class="fs-anim-lower" id="q2" name="q2" type="text" placeholder="What's your age" ng-model="ans.age" required/>
+            </li>
+            <li data-input-trigger>
+                <label class="fs-field-label fs-anim-upper" data-info="We'll make sure to use it all over">What's your gender</label>
+                <select class="cs-select cs-skin-boxes fs-anim-lower" ng-model="ans.gender">
+                    <option value="" disabled selected>Pick a gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </li>
+            <li>
+                <label class="fs-field-label fs-anim-upper" for="q4">Tell us about your symptoms</label>
+                <textarea class="fs-anim-lower" id="q4" name="q4" placeholder="Describe here" ng-model="ans.symptoms"></textarea>
+            </li>
+
+        </ol><!-- /fs-fields -->
+        <button class="fs-submit" type="submit" ng-click="submit()">Submit</button>
+    </form><!-- /fs-form -->
+</div><!-- /fs-form-wrap -->
